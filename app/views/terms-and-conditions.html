@@ -1,0 +1,54 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Terms &amp; Conditions - NHS website
+{% endblock %}
+
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <div class="nhsuk-back-link">
+        <a class="nhsuk-back-link__link" href="/">
+          <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+          </svg>
+          Go back
+        </a>
+      </div>
+
+      <h1>Terms &amp; Conditions</h1>
+
+      <p>You will need to accept our Terms &amp; Conditions before continuing</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non molestie turpis. Aenean volutpat dictum mi et molestie. Cras aliquam nibh sed felis hendrerit, vitae tristique nisi mattis. Morbi molestie elit porta odio commodo dapibus. Vestibulum maximus vel eros vitae gravida. Sed sagittis quis turpis non aliquet. Morbi laoreet neque orci, nec volutpat erat sollicitudin ut. Vivamus nec fringilla lorem. Etiam interdum tincidunt dui at rhoncus. In fermentum vel ipsum ac placerat. Quisque hendrerit massa eu nisl aliquet venenatis. Aenean ultrices nibh venenatis urna fringilla, tempus semper augue malesuada.</p>
+      <p>Fusce libero purus, cursus dictum consequat et, blandit sit amet libero. Proin dapibus risus nec accumsan iaculis. Integer venenatis tempus tincidunt. Donec cursus, eros vel ornare mollis, quam ipsum dapibus justo, nec maximus ligula tellus sit amet ipsum. Morbi fermentum tortor sit amet lorem varius maximus. Maecenas et consequat sapien. Aliquam maximus sapien sed interdum iaculis. In nec scelerisque metus. Praesent aliquet sed nulla eu auctor. Donec et laoreet quam. Proin blandit consequat risus vel tempor. Duis lacus dolor, pellentesque a est vitae, molestie tempor dui. Morbi commodo turpis et nisl malesuada, ut sagittis est eleifend. Praesent dapibus dui nec turpis dapibus, eget gravida dui suscipit. Aliquam tincidunt pharetra dui, ullamcorper tristique neque dignissim non.</p>
+      <p>Maecenas placerat, ex ut ultricies ultricies, purus leo dictum mi, a tincidunt lorem purus id urna. Donec suscipit sit amet lectus ut placerat. Aenean et quam erat. Nulla bibendum erat tortor, in tristique augue pulvinar vel. Sed a suscipit tortor. Donec porttitor erat vel rutrum egestas. Nam mauris sapien, fringilla id enim ac, consequat porttitor magna. Nulla consectetur neque a maximus commodo. Nam fermentum, risus vitae interdum tincidunt, orci purus lobortis tortor, nec elementum est erat id neque.</p>
+      <p>Sed at orci id ex condimentum congue. Nam ut nunc ac nisl bibendum posuere. Integer purus metus, interdum at sodales eu, molestie in enim. Curabitur in magna luctus, condimentum sem vel, tempus mi. Curabitur lobortis nunc sem, semper accumsan ex fringilla ac. Nam at neque volutpat, faucibus risus ac, pellentesque leo. Ut consequat vestibulum scelerisque. Nam non mi dolor. Vestibulum maximus velit vitae enim auctor, vitae cursus nulla vulputate. Proin in lobortis eros. Vivamus pharetra velit urna, vel porta tellus sollicitudin ultrices. Suspendisse potenti. Donec ex purus, viverra eu lectus auctor, euismod pellentesque nisi. Nullam nisi purus, placerat quis ullamcorper ac, vulputate vel dui.</p>
+      <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam eleifend tempus elit id eleifend. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras vel laoreet urna. Vestibulum sit amet tellus sit amet diam viverra euismod sed tempus justo. Quisque aliquam ipsum nec pellentesque tincidunt. Suspendisse finibus vulputate justo faucibus lacinia.</p>
+
+      {{ reviewDate({
+        "lastReview": "6 March 2020",
+        "nextReview": "6 March 2021"
+      }) }}
+
+      <a class="nhsuk-button" href="/signup">
+        Accept and continue
+      </a>
+
+      <a class="nhsuk-button nhsuk-button--secondary" href="/">
+        Decline and return to start
+      </a>
+
+    </div>  
+
+  </div>
+{% endblock %}

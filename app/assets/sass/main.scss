@@ -10,3 +10,43 @@
 ///////////////////////////////////////////
 // Add your custom CSS/Sass styles below... 
 ///////////////////////////////////////////
+
+.nhsuk-button {
+  &:focus {
+    &:visited {
+      color: $nhsuk-focus-text-color;
+    }
+  }
+}
+
+.nhsuk-breadcrumb__link {
+  &:focus {
+    &:hover {
+      color: $nhsuk-focus-text-color;
+    }
+  }
+}
+
+/* ==========================================================================
+   #FOOTER
+   ========================================================================== */
+
+ .app-cookies-footer {
+  background-color: $color_nhsuk-grey-4;
+}
+
+.app-cookies-footer--text {
+  @include nhsuk-font(16);
+  @include nhsuk-responsive-padding(5, 'bottom');
+
+  color: $color_nhsuk-grey-1;
+  margin-bottom: 0;
+  padding-bottom: nhsuk-spacing(4);
+
+  svg {
+    margin-right: nhsuk-spacing(2);
+    position: relative;
+    top: 2px;
+  }
+
+}
