@@ -19,53 +19,33 @@
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
 
-      <form>
+      <form method="post" action="/screener-question/answer">
 
         <div class="nhsuk-form-group">
           <label class="nhsuk-label nhsuk-label--l" for="select-1">
-            Who has asked you to self isolate?
+            Have you been told to self-isolate?
           </label>
 
           <div class="nhsuk-radios">
             <div class="nhsuk-radios__item">
-              <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="nhs-111-online">
+              <input class="nhsuk-radios__input" id="self-isolate-1" name="self-isolate" type="radio" value="yes">
               <label class="nhsuk-label nhsuk-radios__label" for="example-1">
-                NHS 111 (online)
+                Yes
               </label>
             </div>
             <div class="nhsuk-radios__item">
-              <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="nhs-111-phone">
+              <input class="nhsuk-radios__input" id="self-isolate-2" name="self-isolate" type="radio" value="no">
               <label class="nhsuk-label nhsuk-radios__label" for="example-2">
-                NHS 111 (phone)
-              </label>
-            </div>
-            <div class="nhsuk-radios__item">
-              <input class="nhsuk-radios__input" id="example-3" name="example" type="radio" value="medical-professional">
-              <label class="nhsuk-label nhsuk-radios__label" for="example-3">
-                Medical professional
+                No
               </label>
             </div>
           </div>
 
         </div>
 
-        <div class="nhsuk-inset-text">
-          <span class="nhsuk-u-visually-hidden">Information: </span>
-          <p>If you have not been advised to self-isolate by NHS 111 or a medical professional then you do not need to use this service.</p>
-        </div>
-
-        <details class="nhsuk-details">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text">
-              Why are we asking who has asked you to self isolate?
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-            <p>...</p>
-          </div>
-        </details>
-
-        <a class="nhsuk-button" href="/screener-question-date">Continue</a>
+        <button class="nhsuk-button" type="submit">
+          Continue
+        </button>
 
       </form>
 
