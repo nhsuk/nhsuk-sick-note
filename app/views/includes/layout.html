@@ -22,7 +22,7 @@
 {% block header %}
   {{ header({
     "service": {
-        "name": "Sick note",
+        "name": "Fit note",
         "href": "/"
       },
       "showNav": "false",
@@ -41,8 +41,8 @@
       <ul class="nhsuk-footer__list">
         <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="https://www.nhs.uk">NHS website</a></li>
         <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="https://111.nhs.uk">NHS 111 Online</a></li>
-        <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="/page-example">Privacy policy</a></li>
-        <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="/page-example">Terms and conditions</a></li>
+        <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="/#1">Privacy policy</a></li>
+        <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="/#2">Terms and conditions</a></li>
       </ul>
       <p class="nhsuk-footer__copyright">© Crown copyright</p>
     </div>
@@ -59,9 +59,8 @@
 
 {% block bodyEnd %}
   {% block scripts %}
-    <!-- Custom JavaScript files can be added to this file -->
-    {% include "includes/scripts.html" %}
-    <!-- For adding page specific JavsScript -->
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/main.js"></script>
     {% block pageScripts %}{% endblock %}
   {% endblock %}
 {% endblock %}

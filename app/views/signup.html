@@ -1,12 +1,5 @@
-<!-- Extends the layout from /views/layout.html -->
-{% extends 'layout.html' %}
-<!-- 
-  In /views/layout.html you can:
-    - change the header and footer 
-    - add custom CSS and JavaScript
--->
-
-<!-- Set the page title inside the pageTitle block -->
+{% extends 'includes/layout.html' %}
+ 
 {% block pageTitle %}
   Register your details - NHS website
 {% endblock %}
@@ -43,55 +36,6 @@
           </label>
           <input class="nhsuk-input" id="example" name="example" type="text">
         </div>
-
-        <div class="nhsuk-form-group">
-          <label class="nhsuk-label" for="example">
-            National Insurance number
-          </label>
-          <span class="nhsuk-hint">
-            Your NHS number is a 10 digit number that you can find on any letter the NHS has sent you. For example, 458 777 3456.
-          </span>
-          <input class="nhsuk-input" id="example" name="example" type="text">
-        </div>
-
-        <fieldset class="nhsuk-fieldset">
-          <div class="nhsuk-form-group">
-            <label class="nhsuk-label" for="address-line-1">
-              Building and street <span class="nhsuk-u-visually-hidden">line 1 of 2</span>
-            </label>
-            <input class="nhsuk-input" id="address-line-1" name="address-line-1" type="text">
-          </div>
-
-          <div class="nhsuk-form-group">
-            <label class="nhsuk-label" for="address-line-2">
-              <span class="nhsuk-u-visually-hidden">Building and street line 2 of 2</span>
-            </label>
-            <input class="nhsuk-input" id="address-line-2" name="address-line-2" type="text">
-          </div>
-
-          <div class="nhsuk-form-group">
-            <label class="nhsuk-label" for="address-town">
-              Town or city
-            </label>
-            <input class="nhsuk-input nhsuk-u-width-two-thirds" id="address-town" name="address-town" type="text">
-          </div>
-
-          <div class="nhsuk-form-group">
-            <label class="nhsuk-label" for="address-county">
-              County
-            </label>
-            <input class="nhsuk-input nhsuk-u-width-two-thirds" id="address-county" name="address-county" type="text">
-          </div>
-
-          <div class="nhsuk-form-group">
-            <label class="nhsuk-label" for="address-postcode">
-              Postcode
-            </label>
-            <input class="nhsuk-input nhsuk-input--width-10" id="address-postcode" name="address-postcode" type="text">
-          </div>
-
-        </fieldset>        
-        
 
       </form>
 
