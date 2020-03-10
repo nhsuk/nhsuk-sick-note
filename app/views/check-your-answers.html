@@ -1,0 +1,65 @@
+{% extends 'includes/layout.html' %}
+
+{% block pageTitle %}
+  Check your answers - NHS website
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <div class="nhsuk-back-link">
+        <a class="nhsuk-back-link__link" href="/register-your-details">
+          <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+          </svg>
+          Go back
+        </a>
+      </div>
+
+      <h1 class="nhsuk-u-margin-top-4">
+        Check your answers before sending your application
+      </h1>
+
+      <h2>
+        Personal details
+      </h2>
+
+      <dl class="nhsuk-summary-list">
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            Name
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            Kevin Francis
+          </dd>
+        </div>
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            Date of birth
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            15 March 1984
+          </dd>
+        </div>
+      </dl>
+
+      <h2>
+        Now send you application
+      </h2>
+
+      <p>
+        By submitting this notification you are confirming that, to the best of your knowledge, the details you are providing are correct.
+      </p>
+
+      <p>
+        With your details with will do X.
+      </p>
+
+      <a href="/confirmation-page" class="nhsuk-button">
+        Accept and send registration
+      </a>
+
+    </div>
+  </div>
+{% endblock %}

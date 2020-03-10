@@ -15,14 +15,9 @@
   &:focus {
     &:visited {
       color: $nhsuk-focus-text-color;
-    }
-  }
-}
-
-.nhsuk-breadcrumb__link {
-  &:focus {
-    &:hover {
-      color: $nhsuk-focus-text-color;
+      &:active {
+        color: #fff;
+      }
     }
   }
 }
