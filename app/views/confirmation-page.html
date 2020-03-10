@@ -3,26 +3,39 @@
 
 {% extends "includes/layout.html" %}
 
-{% block backLink %}
-<div class="nhsuk-back-link">
-  <a class="nhsuk-back-link__link" href="/register-your-details">
-    <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
-    </svg>
-    Go back
-  </a>
-</div>
-{% endblock %}
-
 {% block content %}
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
 
-      <h1>Application complete</h1>
-      <p><a href="/download">Download your PDF certificate</a></p>
+      <h1 class="nhsuk-heading-l">Application complete</h1>
 
-      <h2>What happens next</h2>
-      <p>Tell the user what happens next.</p>
+      <div class="nhsuk-panel nhsuk-panel--confirmation nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-4">
+
+        <div class="nhsuk-panel__body">
+          <p class="nhsuk-u-margin-bottom-0"><a href="/blank.pdf">Download your PDF certificate</a></p>
+        </div>
+
+      </div>
+
+      <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Need help saving the PDF file?
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>...</p>
+          <p>...</p>
+          <p>...</p>
+        </div>
+      </details>
+
+
+      <h2 class="nhsuk-heading-m">What you need to do now</h2>
+      <p><strong>If you are employed:</strong> Please show this form to your employer. You could get Statutory Sick Pay (SSP) which is paid by your employer. If your employer cannot pay you SSP they will give you form SSP1 to claim benefits.</p>
+      <p><strong>If you are self-employed:</strong> You could claim benefits.</p>
+      <p><strong>If you are already claiming benefits:</strong> Please send this form to the office dealing with your claim.</p>
+      <p><strong>If you need to make a claim to benefits:</strong> Visit <a href="https://www.gov.uk/browse/benefits">www.gov.uk/browse/benefits</a> or phone 0800 055 6688 (8am to 6pm Monday to Friday). Textphone users call 0800 023 4888.</p>
 
     </div>
   </div>
