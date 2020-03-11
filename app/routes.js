@@ -13,7 +13,7 @@ router.post('/screener-question/answer', function (req, res) {
   // Check whether the variable matches a condition
   if (answer == "yes"){
     // Send user to next page
-    res.redirect('/screener-question-date')
+    res.redirect('/screener-question-why')
   }
   else {
     // Send user to ineligible page
