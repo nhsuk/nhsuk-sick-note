@@ -29,7 +29,7 @@ router.post('/screener-question-date/answer', function (req, res) {
   var answer = req.session.data['self-isolate-date']
 
   // Check whether the variable matches a condition
-  if (answer == "yes"){
+  if (answer == "today"){
     // Send user to next page
     res.redirect('/what-is-your-name')
   }

@@ -30,15 +30,15 @@
 
           <div class="nhsuk-radios">
             <div class="nhsuk-radios__item">
-              <input class="nhsuk-radios__input" id="self-isolate-date-1" name="self-isolate-date" type="radio" value="today" {{ checked("self-isolate-date", "yes") }}>
+              <input class="nhsuk-radios__input" id="self-isolate-date-1" name="self-isolate-date" type="radio" value="today" {{ checked("self-isolate-date", "today") }}>
               <label class="nhsuk-label nhsuk-radios__label" for="example-1">
-                Yes
+                Today
               </label>
             </div>
             <div class="nhsuk-radios__item">
-              <input class="nhsuk-radios__input" id="self-isolate-date-2" name="self-isolate-date" type="radio" value="sometime in the last 2 weeks" {{ checked("self-isolate-date", "no") }}>
+              <input class="nhsuk-radios__input" id="self-isolate-date-2" name="self-isolate-date" type="radio" value="last-2-weeks" {{ checked("self-isolate-date", "last-2-weeks") }}>
               <label class="nhsuk-label nhsuk-radios__label" for="example-2">
-                No
+                Sometime in the last 2 weeks
               </label>
             </div>
           </div>
