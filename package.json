@@ -33,8 +33,10 @@
     "keypather": "^3.0.0",
     "nhsuk-frontend": "^3.0.3",
     "node-sass": "^4.13.1",
+    "notifications-node-client": "^4.7.2",
     "nunjucks": "^3.2.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "pdfkit": "^0.11.0"
   },
   "devDependencies": {}
 }
