@@ -26,7 +26,7 @@
             Name
           </dt>
           <dd class="nhsuk-summary-list__value">
-            Kevin Francis
+            {{ data['first-name'] }} {{ data['last-name'] }}
           </dd>
           <dd class="nhsuk-summary-list__actions">
             <a href="/what-is-your-name">
@@ -39,7 +39,7 @@
             Email address
           </dt>
           <dd class="nhsuk-summary-list__value">
-            kevin.francis@email.com
+            {{ data['email'] }}
           </dd>
           <dd class="nhsuk-summary-list__actions">
             <a href="/what-is-your-name">
@@ -52,7 +52,7 @@
             Date of birth
           </dt>
           <dd class="nhsuk-summary-list__value">
-            15 March 1984
+            {{ data['dob-day'] }} {{ data['dob-month'] }} {{ data['dob-year'] }}
           </dd>
           <dd class="nhsuk-summary-list__actions">
             <a href="/what-is-your-dob">
@@ -65,7 +65,7 @@
             Isolation start date
           </dt>
           <dd class="nhsuk-summary-list__value">
-            15 March 2020
+            {{ data['isolation-day'] }} {{ data['isolation-month'] }} {{ data['isolation-year'] }}
           </dd>
           <dd class="nhsuk-summary-list__actions">
             <a href="/screener-question-date">

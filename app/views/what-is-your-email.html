@@ -19,15 +19,15 @@
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
 
-      <form>
+      <form action="/what-is-your-dob" method="post">
 
         <div class="nhsuk-form-group">
           <h1 class="nhsuk-label-wrapper">
-            <label class="nhsuk-label nhsuk-label--l" for="example-heading">
+            <label class="nhsuk-label nhsuk-label--l" for="email">
               What is your email address?
             </label>
           </h1>
-          <input class="nhsuk-input" id="example-heading" name="example-heading" type="text">
+          <input class="nhsuk-input" id="email" name="email" type="text" value="{{ data['email'] }}">
         </div>
 
         <details class="nhsuk-details">
@@ -41,7 +41,9 @@
           </div>
         </details>
 
-        <a class="nhsuk-button" href="/what-is-your-dob">Continue</a>
+        <button class="nhsuk-button" type="submit">
+          Continue
+        </button>
 
       </form>
 
