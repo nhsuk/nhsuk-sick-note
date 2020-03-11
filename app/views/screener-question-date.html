@@ -1,4 +1,4 @@
-{% set pageTitle = "Do you want the coronavirus self-isolation note to start from today?" %}
+{% set pageTitle = "When were you told to start self-isolating?" %}
 {% set mainClasses = "nhsuk-main-wrapper--s" %}
 
 {% extends "includes/layout.html" %}
@@ -24,19 +24,19 @@
         <div class="nhsuk-form-group">
           <h1 class="nhsuk-label-wrapper">
             <label class="nhsuk-label nhsuk-label--l" for="select-1">
-              Do you want the coronavirus self-isolation note to start from today?
+              When were you told to start self-isolating?
             </label>
           </h1>
 
           <div class="nhsuk-radios">
             <div class="nhsuk-radios__item">
-              <input class="nhsuk-radios__input" id="self-isolate-date-1" name="self-isolate-date" type="radio" value="yes" {{ checked("self-isolate-date", "yes") }}>
+              <input class="nhsuk-radios__input" id="self-isolate-date-1" name="self-isolate-date" type="radio" value="today" {{ checked("self-isolate-date", "yes") }}>
               <label class="nhsuk-label nhsuk-radios__label" for="example-1">
                 Yes
               </label>
             </div>
             <div class="nhsuk-radios__item">
-              <input class="nhsuk-radios__input" id="self-isolate-date-2" name="self-isolate-date" type="radio" value="no" {{ checked("self-isolate-date", "no") }}>
+              <input class="nhsuk-radios__input" id="self-isolate-date-2" name="self-isolate-date" type="radio" value="sometime in the last 2 weeks" {{ checked("self-isolate-date", "no") }}>
               <label class="nhsuk-label nhsuk-radios__label" for="example-2">
                 No
               </label>
@@ -48,11 +48,11 @@
         <details class="nhsuk-details">
           <summary class="nhsuk-details__summary">
             <span class="nhsuk-details__summary-text">
-              Why are we asking for a start date?
+              Why are we asking this?
             </span>
           </summary>
           <div class="nhsuk-details__text">
-            <p>...</p>
+            <p>We need to inlcude this information on your coronavirus self-isolation note</p>
           </div>
         </details>
 
