@@ -22,13 +22,13 @@
       <form action="/what-is-your-name" method="post">
 
         <div class="nhsuk-form-group">
-          <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
+          <fieldset class="nhsuk-fieldset" aria-describedby="isolation-date-hint" role="group">
             <legend class="nhsuk-fieldset__legend nhsuk-label--l">
               <h1 class="nhsuk-fieldset__heading">
                 On what date were you told to start self-isolating?
               </h1>
             </legend>
-            <span class="nhsuk-hint" id="example-hint">
+            <span class="nhsuk-hint" id="isolation-date-hint">
               For example, 10 3 2020
             </span>
 
@@ -38,7 +38,7 @@
                   <label class="nhsuk-label nhsuk-date-input__label" for="isolation-day">
                     Day
                   </label>
-                  <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="isolation-day" name="isolation-day" type="number" pattern="[0-9]*">
+                  <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="isolation-day" name="isolation-day" type="text" pattern="[0-9]*" inputmode="numeric">
                 </div>
               </div>
               <div class="nhsuk-date-input__item">
@@ -46,15 +46,15 @@
                   <label class="nhsuk-label nhsuk-date-input__label" for="isolation-month">
                     Month
                   </label>
-                  <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="isolation-month" name="isolation-month" type="number" pattern="[0-9]*">
+                  <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="isolation-month" name="isolation-month" type="text" pattern="[0-9]*" inputmode="numeric">
                 </div>
               </div>
               <div class="nhsuk-date-input__item">
                 <div class="nhsuk-form-group">
-                  <label class="nhsuk-label nhsuk-date-input__label" for="example-year">
+                  <label class="nhsuk-label nhsuk-date-input__label" for="isolation-year">
                     Year
                   </label>
-                  <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="isolation-year" name="isolation-year" type="number" pattern="[0-9]*">
+                  <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="isolation-year" name="isolation-year" type="text" pattern="[0-9]*" inputmode="numeric">
                 </div>
               </div>
             </div>
