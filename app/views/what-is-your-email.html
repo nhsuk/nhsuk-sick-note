@@ -1,4 +1,4 @@
-{% set pageTitle = "What is your email address" %}
+{% set pageTitle = "What email address should we send your note to" %}
 {% set mainClasses = "nhsuk-main-wrapper--s" %}
 
 {% extends "includes/layout.html" %}
@@ -24,20 +24,26 @@
         <div class="nhsuk-form-group">
           <h1 class="nhsuk-label-wrapper">
             <label class="nhsuk-label nhsuk-label--l" for="email">
-              What is your email address?
+              What email address should we send your note to?
             </label>
           </h1>
+
+          <span class="nhsuk-hint">
+            You can send this to a trusted friend or family member if you don't have your own email address.
+          </span>
+
           <input class="nhsuk-input" id="email" name="email" type="text" value="{{ data['email'] }}">
         </div>
 
+      
         <details class="nhsuk-details">
           <summary class="nhsuk-details__summary">
             <span class="nhsuk-details__summary-text">
-              Why are we asking for your email address?
+              Why are we asking for an email address?
             </span>
           </summary>
           <div class="nhsuk-details__text">
-            <p>If you have an email address we can send your isolation note to you by email. If you don't have one, you can make a note of the reference number we give you at the end or print out the page for your records.</p>
+            <p>We will send a copy of your isolation note by email. You can also download it when you complete this form.</p>
           </div>
         </details>
 

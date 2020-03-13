@@ -7,17 +7,26 @@
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
 
-      <h1 class="nhsuk-heading-l">Your isolation note</h1>
-      <p>Your isolation note has been emailed to <strong>{% if data['email'] %}{{ data['email'] }}{% else %}email@email.com{% endif %}</strong></p>
-      <p>You can also download it now: <a href="/confirmation-dob">Download your isolation note</a></p>
-      <p>Your reference number is <strong>1111 2222 3333 4444</strong></p>
-      <p><a href="https://www.nhs.uk/conditions/coronavirus-covid-19/self-isolation-advice/">Read our advice for staying at home</a></p>
+      <div class="nhsuk-panel nhsuk-panel--confirmation nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-4">
+
+        <h1 class="nhsuk-panel__title nhsuk-heading-l">Your isolation note</h1>
+
+        <div class="nhsuk-panel__body">
+          <p>Your reference number is <span class="nhsuk-u-bold">1111 2222 3333 4444</span></p>
+          <p>Write this down and keep it safe.</p>
+          <p>Your isolation note has been emailed to <span class="nhsuk-u-bold">{% if data['email'] %}{{ data['email'] }}{% else %}email@email.com{% endif %}</span></p>
+          <p class="nhsuk-u-margin-bottom-0">You can also download it now: <a href="/confirmation-dob">Download your isolation note</a></p>
+        </div>
+
+      </div>
 
       <h2 class="nhsuk-heading-m">What you need to do next</h2>
-      <p><strong>If you are employed</strong> <br>Please show this email to your employer. Your employer may want to check the details you've provided on coronavirus-self-isolation-verify</p>
-      <p><strong>If you are self-employed</strong> <br>You could claim benefits.</p>
+      <p><a href="https://www.nhs.uk/conditions/coronavirus-covid-19/self-isolation-advice/">Read our advice for staying at home</a></p>
+
+      <p><strong>If you are employed</strong> <br>Please show this email to your employer. Your employer may want to check the details you've provided.</p>
+      <p><strong>If you are self-employed</strong> You could claim benefits.</p>
       <p><strong>If you are already claiming benefits</strong> <br>Please show this email to the office dealing with your claim.</p>
-      <p><strong>If you need to make a claim to benefits</strong> <br>Visit <a href="https://www.gov.uk/browse/benefits">www.gov.uk/browse/benefits</a> or phone 0800 055 6688 (8am to 6pm Monday to Friday). <br>Textphone users call 0800 023 4888.</p>
+      <p>If you are worried or unsure about your employment status, please visit [link here] or [contact details].</p>
 
     </div>
   </div>
