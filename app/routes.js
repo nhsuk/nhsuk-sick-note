@@ -30,11 +30,29 @@ router.post('/screener-question/why', function (req, res) {
   // Check whether the variable matches a condition
   if (answer == "you have symptoms of coronavirus and live alone"){
     // Send user to next page
-    res.redirect('/screener-question-why-no')
+    res.redirect('/screener-question-why-next')
   }
   else {
     // Send user to ineligible page
     res.redirect('/screener-question-date')
+  }
+
+})
+
+// Branching example
+router.post('/screener-question-why-next/answer', function (req, res) {
+
+  // Make a variable and give it the value from 'know-nhs-number'
+  var answer = req.session.data['self-isolate-already']
+
+  // Check whether the variable matches a condition
+  if (answer == "yes"){
+    // Send user to next page
+    res.redirect('/screener-question-date-no')
+  }
+  else {
+    // Send user to ineligible page
+    res.redirect('/screener-question-why-no')
   }
 
 })
