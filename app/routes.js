@@ -23,7 +23,7 @@ router.post('/screener-question/answer', function (req, res) {
 
 router.post('/screener-question-alt/answer', function (req, res) {
 
-  var answer = req.session.data['self-isolate']
+  var answer = req.session.data['self-isolate-other']
 
   // Check whether the variable matches a condition
   if (answer == "yes"){
