@@ -7,7 +7,22 @@ const router = express.Router();
 // Branching example
 router.post('/screener-question/answer', function (req, res) {
 
-  // Make a variable and give it the value from 'know-nhs-number'
+  var answer = req.session.data['self-isolate']
+
+  // Check whether the variable matches a condition
+  if (answer == "yes"){
+    // Send user to next page
+    res.redirect('/screener-question-why')
+  }
+  else {
+    // Send user to ineligible page
+    res.redirect('/screener-question-alt')
+  }
+
+})
+
+router.post('/screener-question-alt/answer', function (req, res) {
+
   var answer = req.session.data['self-isolate']
 
   // Check whether the variable matches a condition
