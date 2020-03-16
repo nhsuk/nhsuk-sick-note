@@ -22,6 +22,24 @@ router.post('/screener-question/answer', function (req, res) {
 })
 
 // Branching example
+router.post('/screener-question/why', function (req, res) {
+
+  // Make a variable and give it the value from 'know-nhs-number'
+  var answer = req.session.data['isolation-why']
+
+  // Check whether the variable matches a condition
+  if (answer == "you have symptoms of coronavirus and live alone"){
+    // Send user to next page
+    res.redirect('/screener-question-why-no')
+  }
+  else {
+    // Send user to ineligible page
+    res.redirect('/screener-question-date')
+  }
+
+})
+
+// Branching example
 router.post('/screener-question-date/answer', function (req, res) {
 
   // Make a variable and give it the value from 'know-nhs-number'
