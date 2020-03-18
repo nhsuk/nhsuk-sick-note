@@ -22,6 +22,10 @@
   }
 }
 
+.nhsuk-header__transactional-service-name--link:focus:hover {
+  color: #212b32;
+}
+
 .nhsuk-back-link {
   @include nhsuk-responsive-padding(4, 'top');
   margin-bottom: 0;
