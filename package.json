@@ -31,11 +31,10 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "keypather": "^3.0.0",
+    "nhsuk-frontend": "^3.0.4",
     "node-sass": "^4.13.1",
     "nunjucks": "^3.2.0",
     "path": "^0.12.7"
   },
-  "devDependencies": {
-    "nhsuk-frontend": "^3.0.4"
-  }
+  "devDependencies": {}
 }
