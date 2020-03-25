@@ -1,4 +1,4 @@
-{% set pageTitle = "Enter the employees isolation note reference number" %}
+{% set pageTitle = "Enter the isolation note reference number" %}
 {% set mainClasses = "nhsuk-main-wrapper--s" %}
 
 {% extends "includes/layout.html" %}
@@ -44,7 +44,7 @@
               Enter the isolation note reference number
             </label>
           </h1>
-          <span class="nhsuk-hint" id="account-number-hint">
+          <span class="nhsuk-hint" id="reference-number-hint">
             This is the 16 digit number you can find on the isolation note or in the confirmation email.
           </span>
           <input class="nhsuk-input nhsuk-input--width-10" id="reference-number" name="reference-number" type="text" aria-describedby="reference-number-hint" inputmode="numeric" spellcheck="false" value="{{ data['reference-number'] }}">
