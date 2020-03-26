@@ -4,36 +4,37 @@ const router = express.Router();
 
 // Add your routes here - above the module.exports line
 
-// Branching example
+// First screener page routing
 router.post('/screener-question/answer', function (req, res) {
 
+  // Set a variable to the answer
   var answer = req.session.data['self-isolate']
 
-  // Check whether the variable matches a condition
+  // Check whether the answer is yes
   if (answer == "yes"){
-    // Send user to next page
+    // If the answer is yes send to the next question
     res.redirect('/screener-question-why')
   }
   else {
-    // Send user to ineligible page
+    // If the answer is no send to the no screen 
     res.redirect('/screener-question-no')
   }
 
 })
 
-// Branching example
+// Date screener page routing
 router.post('/screener-question-date/answer', function (req, res) {
 
-  // Make a variable and give it the value from 'know-nhs-number'
+    // Set a variable to the answer
   var answer = req.session.data['self-isolate-date']
 
-  // Check whether the variable matches a condition
+  // Check whether the answer is yes
   if (answer == "today"){
     // Send user to next page
     res.redirect('/what-is-your-name')
   }
   else {
-    // Send user to ineligible page
+    // Send user to enter a custom date page
     res.redirect('/screener-question-date-no')
   }
 
