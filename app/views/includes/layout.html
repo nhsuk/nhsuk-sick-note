@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
+    <meta name="description" content="{% if pageDescription %}{{pageDescription}}{% else %}Use this service if you have been told to self-isolate because of coronavirus and you need a note for your employer.{% endif %}">
 
-    <title>{{ pageTitle }} - NHS website</title>
+    <title>{{ pageTitle }} - NHS</title>
 
     <link href="https://www.nhs.uk/" rel="preconnect">
     <link href="https://assets.nhs.uk/" rel="preconnect" crossorigin>
@@ -32,6 +32,14 @@
     <meta name="msapplication-wide310x150logo" content="/nhsuk-frontend/assets/favicons/widetile-310x150.png">
     <meta name="msapplication-square310x310logo" content="/nhsuk-frontend/assets/favicons/largetile-310x310.png">
     {% endblock %}
+
+    <meta property="og:url" content="https://111.nhs.uk/isolation-note"/>
+    <meta property="og:site_name" content="nhs.uk"/>
+    <meta property="og:title" content="{{ pageTitle }} - NHS"/>
+    <meta property="og:description" content="{% if pageDescription %}{{pageDescription}}{% else %}Use this service if you have been told to self-isolate because of coronavirus and you need a note for your employer.{% endif %}"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="en_GB"/>
+    <meta property="og:image" content="https://assets.nhs.uk/prod/images/External_0320_coronavirus_04.width-1200.png" />
   </head>
 
   <body>
