@@ -28,7 +28,7 @@ router.post('/screener-question-why/answer', function (req, res) {
   // Set a variable to the answer
   var answer = req.session.data['isolation-why']
 
-  if (answer == "I have a medical condition which means I shouldn't go to work"){
+  if (answer == "I am at higher risk from coronavirus"){
     res.redirect('/screener-question-why-no')
   }
   else {
