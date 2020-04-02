@@ -22,6 +22,21 @@ router.post('/screener-question/answer', function (req, res) {
 
 })
 
+// Why screener page routing
+router.post('/screener-question-why/answer', function (req, res) {
+
+  // Set a variable to the answer
+  var answer = req.session.data['isolation-why']
+
+  if (answer == "I have a medical condition which means I shouldn't go to work"){
+    res.redirect('/screener-question-why-no')
+  }
+  else {
+    res.redirect('/screener-question-date')
+  }
+
+})
+
 // Date screener page routing
 router.post('/screener-question-date/answer', function (req, res) {
 
