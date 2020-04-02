@@ -11,28 +11,14 @@
 // Add your custom CSS/Sass styles below... 
 ///////////////////////////////////////////
 
-.nhsuk-button {
-  &:focus {
-    &:visited {
-      color: $nhsuk-focus-text-color;
-      &:active {
-        color: #fff;
-      }
-    }
-  }
-}
-
-.nhsuk-header__transactional-service-name--link:focus:hover {
-  color: #212b32;
-}
-
 .nhsuk-back-link {
   @include nhsuk-responsive-padding(4, 'top');
   margin-bottom: 0;
 }
 
-.nhsuk-u-bold {
-  font-weight: 700;
+.app-panel--green {
+  background-color: #007f3b; 
+  color: #ffffff;
 }
 
 /* ==========================================================================
