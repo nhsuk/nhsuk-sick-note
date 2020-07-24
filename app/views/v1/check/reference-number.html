@@ -1,6 +1,7 @@
-{% set pageTitle = "This isolation note is valid" %}
+{% set pageTitle = "Enter the isolation note reference number" %}
 {% set pageDescription = "Use this service if you are an employer and want to check that a coronavirus isolation note is valid." %}
 {% set mainClasses = "nhsuk-main-wrapper--s" %}
+{% set version = "v1" %}
 
 {% extends "includes/layout.html" %}
 
@@ -22,18 +23,42 @@
 </header>
 {% endblock %}
 
+{% block backLink %}
+<div class="nhsuk-back-link">
+  <a class="nhsuk-back-link__link" href="/{{version}}/check">
+    <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+    </svg>
+    Go back
+  </a>
+</div>
+{% endblock %}
+
 {% block content %}
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
 
-      <div class="nhsuk-panel nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-4 app-panel--green">
-        <h1 class="nhsuk-heading-l">This isolation note is valid</h1>
-        <p>We issued the isolation note 1111 2222 3333 4444 on 02/04/2020</p>
-      </div>
+      <form method="post" action="/{{version}}/check/date-of-birth">
 
-     <h2 class="nhsuk-heading-m">Further information</h2>
-     <p><a href="https://www.gov.uk/guidance/working-safely-during-coronavirus-covid-19">GOV.UK: Working safely during coronavirus (COVID-19)</a></p>
+        <div class="nhsuk-form-group">
+         <h1 class="nhsuk-label-wrapper">
+            <label class="nhsuk-label nhsuk-label--l nhsuk-u-margin-bottom-2" for="reference-number">
+              Enter the isolation note reference number
+            </label>
+          </h1>
+          <span class="nhsuk-hint" id="reference-number-hint">
+            This is the 16 digit number you can find on the isolation note or in the confirmation email.
+          </span>
+          <input class="nhsuk-input nhsuk-input--width-10" id="reference-number" name="reference-number" type="text" aria-describedby="reference-number-hint" inputmode="numeric" spellcheck="false" value="{{ data['reference-number'] }}">
+        </div>
 
+        <button class="nhsuk-button" type="submit">
+          Continue
+        </button>
+
+      </form>
+        
     </div>
+
   </div>
 {% endblock %}

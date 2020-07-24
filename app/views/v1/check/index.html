@@ -1,5 +1,6 @@
 {% set pageTitle = "Check an isolation note" %}
 {% set pageDescription = "Use this service if you are an employer and want to check that a coronavirus isolation note is valid." %}
+{% set version = "v1" %}
  
 {% extends "includes/layout.html" %}
 
@@ -35,7 +36,7 @@
         <li>the employee's date of birth</li>
       </ul>
          
-      <a class="nhsuk-button" href="/check/reference-number">Start now</a>
+      <a class="nhsuk-button" href="/{{version}}/check/reference-number">Start now</a>
       
       <p>By using this service you are agreeing to our <a href="https://www.nhs.uk/using-the-nhs/nhs-services/the-nhs-app/isolation-note/terms/" target="_blank" rel="noopener noreferrer">terms of use</a> and <a href="https://www.nhs.uk/using-the-nhs/nhs-services/the-nhs-app/isolation-note/privacy/" target="_blank" rel="noopener noreferrer">privacy policy</a>.</p>
       <h2 class="nhsuk-heading-m">What you need to know as an employer</h2> 
